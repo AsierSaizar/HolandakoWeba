@@ -3,9 +3,16 @@
 
 <head>
     <?php
-    define('APP_DIR', $_SERVER['DOCUMENT_ROOT'] . '/Desktop/HolandakoWeba/'); //Aplikazioaren karpeta edozein lekutatik atzitzeko.
-    define('HREF_VIEWS_DIR', '/Desktop/HolandakoWeba/src/views'); //Aplikazioaren views karpeta edozein lekutatik deitzeko
-    define('HREF_SRC_DIR', '/Desktop/HolandakoWeba/src'); //Aplikazioaren views karpeta edozein lekutatik deitzeko
+        //Asier
+    //define('APP_DIR', $_SERVER['DOCUMENT_ROOT'] . '/Desktop/HolandaFantasy/WEB3/'); //Aplikazioaren karpeta edozein lekutatik atzitzeko.
+    //define('HREF_VIEWS_DIR', '/Desktop/HolandaFantasy/WEB3/src/views'); //Aplikazioaren views karpeta edozein lekutatik deitzeko
+    //define('HREF_SRC_DIR', '/Desktop/HolandaFantasy/WEB3/src'); //Aplikazioaren views karpeta edozein lekutatik deitzeko
+    
+
+    /*Haimar*/
+    define('APP_DIR', $_SERVER['DOCUMENT_ROOT'] . '/HolandaOna/HolandakoWeba/'); //Aplikazioaren karpeta edozein lekutatik atzitzeko.
+    define('HREF_VIEWS_DIR', '/HolandaOna/HolandakoWeba/src/views'); //Aplikazioaren views karpeta edozein lekutatik deitzeko
+    define('HREF_SRC_DIR', '/HolandaOna/HolandakoWeba/src');
     $link = APP_DIR . "src/language/translations.php";
     require_once ($link); //APP_DIR erabilita itzulpenen dokumentua atzitu dugu.
     ?>
