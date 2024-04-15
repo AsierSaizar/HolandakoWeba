@@ -52,12 +52,9 @@
                         <nav>
                             <ul>
                                 <b>
-                                    <li><a href="<?= HREF_SRC_DIR ?>/views/guriBuruz/guriBuruz.php">About us</a></li>
-                                    <br><br>
+                                    <li><a href="<?= HREF_SRC_DIR ?>/views/guriBuruz/guriBuruz.php">About us</a></li><br><br>
                                     <li><a href="<?= HREF_SRC_DIR ?>/views/datuKuriosoak/datuKuriosoak.php">Interesting facts</a></li><br><br>
                                     <li><a href="<?= HREF_SRC_DIR ?>/views/test/test.php">Test</a></li><br><br>
-                                    
-                                    <br><br>
                                 </b>
                             </ul>
                         </nav>
@@ -79,15 +76,6 @@
                     </svg>
                 </button>
                 <input id="search-input" type="text" name="text" class="input__search" placeholder="Search">
-            </div>
-
-
-
-            <div class="language">
-                <!-- HTML-A -->
-                <div class="header grid-elem">
-                    <?php require_once (APP_DIR . "/src/required/selectLang.php"); ?>
-                </div>
             </div>
 
             <?php
