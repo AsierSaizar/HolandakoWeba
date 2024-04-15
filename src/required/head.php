@@ -11,7 +11,7 @@
     ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holanda Fantasy</title>
+    <title>Tilburg & Goierri eskola</title>
 
     <!-- SIDE BARRANTZAT DA HAUUU //////////////////-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -44,7 +44,9 @@
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
                 id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel"><center><b>Tilburg & Goierri eskola</b></center></h5>
+                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                        <center><b>Tilburg & Goierri eskola</b></center>
+                    </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -52,8 +54,10 @@
                         <nav>
                             <ul>
                                 <b>
-                                    <li><a href="<?= HREF_SRC_DIR ?>/views/guriBuruz/guriBuruz.php">About us</a></li><br><br>
-                                    <li><a href="<?= HREF_SRC_DIR ?>/views/datuKuriosoak/datuKuriosoak.php">Interesting facts</a></li><br><br>
+                                    <li><a href="<?= HREF_SRC_DIR ?>/views/guriBuruz/guriBuruz.php">About us</a></li>
+                                    <br><br>
+                                    <li><a href="<?= HREF_SRC_DIR ?>/views/datuKuriosoak/datuKuriosoak.php">Interesting
+                                            facts</a></li><br><br>
                                     <li><a href="<?= HREF_SRC_DIR ?>/views/test/test.php">Test</a></li><br><br>
                                 </b>
                             </ul>
@@ -65,7 +69,9 @@
             <!-- SIDE BARRANTZAT DA HAUUU //////////////////-->
 
 
-
+            <div class="izenBurua">
+                <h2>Tilburg & Goierri eskola</h2>
+            </div>
             <div class="input__container">
                 <div class="shadow__input"></div>
                 <button class="input__button__shadow" id="search-button">
@@ -78,17 +84,7 @@
                 <input id="search-input" type="text" name="text" class="input__search" placeholder="Search">
             </div>
 
-            <?php
 
-            if ((isset($_SESSION['LogIn']))and(($_SESSION['LogIn']) != "")) {
-                $ezizena = $_SESSION["LogIn"];
-            }else{
-                $ezizena = "LogIn";
-            }
-            ?>
-            <div class="logInBtn">
-                <a class="logInBtnA" href="<?= HREF_SRC_DIR ?>/views/logIn/logIn.php"><?=$ezizena?></a>
-            </div>
         </div>
     </header>
     <div class="content">
